@@ -1,10 +1,16 @@
-import { useState } from "react";
+import Header from "./components/header";
+import Content from "./components/content";
+import CreateTweet from "./components/createTweet";
+import Navbar from "./components/navbar";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <h1>Ciao</h1>
+      <Header />
+      <Content />
+      <CreateTweet />
+      <Navbar />
     </div>
   );
 }

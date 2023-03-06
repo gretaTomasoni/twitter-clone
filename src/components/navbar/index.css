@@ -1,0 +1,18 @@
+.Navbar {
+  position: fixed;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 36px;
+  border-top: 1px solid rgb(239, 243, 244);
+  background-color: white;
+}
+
+.Navbar img {
+  width: 24px;
+  height: 24px;
+}
