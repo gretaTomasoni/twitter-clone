@@ -7,6 +7,7 @@ import CreateTweet from "./components/createTweet";
 import Navbar from "./components/navbar";
 import SideTrends from "./components/sideTrends";
 import SideMenu from "./components/sideMenu";
+import SideMenuTablet from "./components/sideMenuTablet";
 import "./App.css";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <div className="App">
       <Header showMenu={isMenuOpen} setShowMenu={setIsMenuOpen} />
       <SideMenu />
+      <SideMenuTablet />
       <Content />
       <SideTrends />
       <CreateTweet />

@@ -20,7 +20,7 @@
   filter: invert();
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 600px) {
   .CreateTweet {
     display: none;
   }
