@@ -9,7 +9,7 @@ const Tweet = ({ messageData }) => {
     <div className="Tweet">
       <img
         className="Tweet_image"
-        src={messageData.photo}
+        src={messageData.photoProfile}
         alt="profile image"
       />
       <div>
@@ -18,18 +18,25 @@ const Tweet = ({ messageData }) => {
           <span className="Tweet_email">{messageData.email}</span>
         </div>
         <p className="Tweet_body">{messageData.body}</p>
+        <img
+          className={
+            messageData.photoPost === "" ? "disabled" : "Tweet_postImage"
+          }
+          src={messageData.photoPost}
+          alt="post image"
+        />
         <div className="Tweet_reactions">
           <div className="Tweet_comment">
             <img src={TweetComment} alt="comment" />
-            <span>70</span>
+            <span>{messageData.comments}</span>
           </div>
           <div className="Tweet_repost">
             <img src={TweetRepost} alt="repost" />
-            <span>40</span>
+            <span>{messageData.repost}</span>
           </div>
           <div className="Tweet_like">
             <img src={TweetLike} alt="like" />
-            <span>134</span>
+            <span>{messageData.like}</span>
           </div>
           <div className="Tweet_share">
             <img src={TweetShare} alt="share" />

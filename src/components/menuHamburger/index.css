@@ -1,0 +1,83 @@
+.MenuHamburger {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 3;
+  opacity: 1;
+  transition: opacity 5s;
+}
+
+.contentMenu {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  bottom: 0;
+  width: 280px;
+  background-color: white;
+  padding: 15px;
+  transition: all 0.35s ease;
+}
+
+.contentMenu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contentMenu__header h3 {
+  font-size: 16px;
+}
+
+.closeButton {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.show {
+  display: block;
+}
+
+.disabled {
+  display: none;
+}
+
+.contentMenu_show {
+  left: 0;
+}
+
+.account {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 30px 0;
+}
+
+.account img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+
+.account span {
+  color: #536471;
+  font-size: 13px;
+}
+
+.account_follower {
+  display: flex;
+  gap: 20px;
+  padding-top: 8px;
+}
+
+.bold {
+  font-weight: 700;
+  color: black !important;
+}

@@ -1,0 +1,21 @@
+.TrendItem {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 0;
+}
+
+.TrendItem span {
+  font-size: 12px;
+  color: #536471;
+}
+
+.TrendItem p {
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 3px;
+}
+
+.iconMore {
+  color: #536471;
+}
