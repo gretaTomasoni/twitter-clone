@@ -1,4 +1,4 @@
-import messageList from "../../mocks/messageList";
+import messageList from "../../mocks/messageList.js";
 import Tweet from "../tweet";
 import "./index.css";
 

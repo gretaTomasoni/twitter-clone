@@ -15,6 +15,19 @@ const messageList = [
   },
   {
     id: 2,
+    userName: "Lady Gaga",
+    email: "@ladygaga",
+    photoProfile:
+      "https://pbs.twimg.com/profile_images/1548557958564364289/6ewE00_O_400x400.jpg",
+    body: "AAAAAAAAAAAAAHHHHHRHRGRGRGRRRGURBHJB \n EORWPSOJWPJORGWOIRGWSGODEWPGOHE PW09GJEDPOKSD!!!!!!!!!!!!!! \n 0924QU8T63095JRGHWPE09UJOPWHRGW",
+    tags: [""],
+    photoPost: "",
+    comments: 135.227,
+    repost: 250.236,
+    like: 456.412,
+  },
+  {
+    id: 3,
     userName: "Ricky Gervais",
     email: "@rickygervais",
     photoProfile:
@@ -28,7 +41,7 @@ const messageList = [
     like: 21.142,
   },
   {
-    id: 3,
+    id: 4,
     userName: "FRIENDS",
     email: "@FriendsTV",
     photoProfile:
@@ -42,7 +55,7 @@ const messageList = [
     like: 6.445,
   },
   {
-    id: 4,
+    id: 5,
     userName: "NASA",
     email: "@NASA",
     photoProfile:
@@ -56,7 +69,7 @@ const messageList = [
     like: 6.645,
   },
   {
-    id: 5,
+    id: 6,
     userName: "Miley Cyrus",
     email: "@MileyCyrus",
     photoProfile:
@@ -70,7 +83,7 @@ const messageList = [
     like: 14.908,
   },
   {
-    id: 6,
+    id: 7,
     userName: "Elon Musk",
     email: "@elonmusk",
     photoProfile:
@@ -83,7 +96,7 @@ const messageList = [
     like: 272.726,
   },
   {
-    id: 7,
+    id: 8,
     userName: "McDonald's",
     email: "@McDonalds",
     photoProfile:

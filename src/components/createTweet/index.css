@@ -19,3 +19,9 @@
   height: 23px;
   filter: invert();
 }
+
+@media (min-width: 1250px) {
+  .CreateTweet {
+    display: none;
+  }
+}

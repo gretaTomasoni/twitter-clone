@@ -12,7 +12,7 @@ const Tweet = ({ messageData }) => {
         src={messageData.photoProfile}
         alt="profile image"
       />
-      <div>
+      <div className="Tweet_container">
         <div className="Tweet_profile">
           <span className="Tweet_userName">{messageData.userName}</span>
           <span className="Tweet_email">{messageData.email}</span>
