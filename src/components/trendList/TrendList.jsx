@@ -8,7 +8,7 @@ const TrendList = () => {
     <div className="TrendList">
       <h3>United States trends</h3>
       {trendList.map((item) => {
-        return <TrendItem trend={item} />;
+        return <TrendItem trend={item} key={item.id} />;
       })}
     </div>
   );
