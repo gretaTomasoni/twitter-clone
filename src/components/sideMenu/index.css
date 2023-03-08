@@ -23,6 +23,7 @@
   align-items: center;
   gap: 20px;
   font-size: 18px;
+  cursor: pointer;
 }
 
 .SideMenu_list img {
@@ -50,5 +51,12 @@
 @media (min-width: 1250px) {
   .SideMenu {
     display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 25%;
+    background-color: white;
+    z-index: 5;
   }
 }
