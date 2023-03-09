@@ -1,11 +1,20 @@
 .Tweet {
   display: flex;
+  width: 100%;
   gap: 12px;
   padding: 11px 15px;
   border-bottom: 1px solid rgb(239, 243, 244);
   font-size: 14px;
   line-height: 19px;
   transition: all 0.35s;
+}
+
+.Tweet_container {
+  width: 100%;
+}
+
+.Tweet_body {
+  width: 100%;
 }
 
 .Tweet:hover {
@@ -44,13 +53,21 @@
   align-items: center;
   justify-content: space-between;
   color: #536471;
+  cursor: pointer;
 }
 
 .Tweet_reactions img {
   width: 17.5px;
   height: 17.5px;
   opacity: 0.6;
-  cursor: pointer;
+}
+
+/* .Tweet_like_img:hover {
+  background-color: rgba(249, 24, 128, 0.2);
+} */
+
+.Tweet_like span:hover {
+  color: rgb(249, 24, 128);
 }
 
 .Tweet_reactions > * {

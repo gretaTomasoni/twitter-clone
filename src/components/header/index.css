@@ -1,4 +1,4 @@
-.Header {
+.Header_up {
   position: relative;
   width: 100%;
   display: flex;
@@ -19,7 +19,7 @@
 }
 
 @media (min-width: 600px) {
-  .Header {
+  .Header_up {
     display: none;
   }
 }

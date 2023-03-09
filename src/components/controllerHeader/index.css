@@ -1,0 +1,86 @@
+.ControllerHeader {
+  width: 100%;
+}
+
+.ControllerHeader_button {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  border-bottom: 1px solid rgb(239, 243, 244);
+  background-color: #ffffffee;
+  margin-top: 7px;
+  cursor: pointer;
+}
+
+.ControllerHeader h3 {
+  display: none;
+}
+
+.forYou,
+.following {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.forYou:hover,
+.following:hover {
+  background-color: rgb(239, 243, 244);
+}
+
+.line {
+  width: 100%;
+  height: 4px;
+  border-radius: 10px;
+  margin-top: 12px;
+}
+
+.blue {
+  background-color: rgb(29, 155, 240);
+}
+
+.controller_active {
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.controller_disabled {
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #536471;
+}
+
+@media (min-width: 600px) {
+  .ControllerHeader {
+    width: 90%;
+    position: absolute;
+    top: 0;
+    left: 10%;
+  }
+  .ControllerHeader h3 {
+    display: block;
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 900px) {
+  .ControllerHeader {
+    width: 51.1%;
+    position: absolute;
+    top: 0;
+    left: 10%;
+  }
+}
+
+@media (min-width: 1250px) {
+  .ControllerHeader {
+    width: 42.5%;
+    position: absolute;
+    top: 0;
+    left: 25%;
+  }
+}
