@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-// import messageList from "../../mocks/messageList.js";
 import Tweet from "../tweet";
 import "./index.css";
 
@@ -7,7 +6,7 @@ const TweetList = () => {
   const [messageList, setMessageList] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/message")
+    fetch("http://localhost:3001/tweets")
       .then((res) => res.json())
       .then((data) => setMessageList(data));
   }, []);
