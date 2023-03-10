@@ -52,35 +52,10 @@
   font-size: 14px;
   color: #536471;
 }
-
 @media (min-width: 600px) {
-  .ControllerHeader {
-    width: 90%;
-    position: absolute;
-    top: 0;
-    left: 10%;
-  }
   .ControllerHeader h3 {
     display: block;
     margin-top: 15px;
     margin-left: 15px;
-  }
-}
-
-@media (min-width: 900px) {
-  .ControllerHeader {
-    width: 51.1%;
-    position: absolute;
-    top: 0;
-    left: 10%;
-  }
-}
-
-@media (min-width: 1250px) {
-  .ControllerHeader {
-    width: 42.5%;
-    position: absolute;
-    top: 0;
-    left: 25%;
   }
 }

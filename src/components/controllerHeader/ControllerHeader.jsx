@@ -1,20 +1,29 @@
+import { useState } from "react";
 import "./index.css";
 
 const ControllerHeader = () => {
+  const [isActive, setIsActive] = useState(false);
+
+  const isActiveFunc = () => {
+    setIsActive((prev) => !prev);
+    console.log(isActive);
+  };
+
   return (
     <div className="ControllerHeader">
       <h3>Home</h3>
       <div className="ControllerHeader_button">
-        <div className="forYou">
-          <a className="controller_active">
+        <div className="forYou" onClick={isActiveFunc}>
+          <a className={isActive ? "controller_disabled" : "controller_active"}>
             <p>For you</p>
-            <div className="line blue"></div>
+            <div className={isActive ? "line" : "line blue"}></div>
           </a>
         </div>
-        <div className="following">
-          <a className="controller_disabled">
+        <div className="following" onClick={isActiveFunc}>
+          {/* <a className="controller_disabled"> */}
+          <a className={isActive ? "controller_active" : "controller_disabled"}>
             <p>Following</p>
-            <div className="line"></div>
+            <div className={isActive ? "line blue" : "line"}></div>
           </a>
         </div>
       </div>

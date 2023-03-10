@@ -8,16 +8,10 @@
     "build": "vite build",
     "preview": "vite preview",
     "start": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "cd server && node server.js",
+    "server": "node server.cjs",
     "client": "npm run dev"
   },
   "dependencies": {
-    "concurrently": "^7.6.0",
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2",
-    "mongodb": "^5.1.0",
-    "mongoose": "^7.0.1",
     "react": "^18.2.0",
     "react-burger-menu": "^3.0.9",
     "react-dom": "^18.2.0",
