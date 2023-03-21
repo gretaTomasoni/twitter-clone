@@ -19,7 +19,10 @@ const EditModal = ({ setModal, product, user }) => {
       }),
     })
       .then((res) => res.json())
-      .then(setModal(false));
+      .then(() => {
+        setModal(false);
+        alert(`${user.firstName}'s tweet has been edited correctly`);
+      });
   };
 
   return (

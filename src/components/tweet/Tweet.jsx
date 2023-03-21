@@ -19,23 +19,6 @@ const Tweet = ({ messageData, setModal, setProduct, setUser }) => {
     setIsLiked(!isLiked);
   };
 
-  const images = [
-    "https://pbs.twimg.com/profile_images/1527504766322069505/CKkE26SN_400x400.jpg",
-    "https://pbs.twimg.com/profile_images/1548557958564364289/6ewE00_O_400x400.jpg",
-    "https://pbs.twimg.com/profile_images/1379503126076604416/xyP35KuE_400x400.jpg",
-    "https://pbs.twimg.com/profile_images/1603454323274530827/idI-Ks75_400x400.jpg",
-    "https://pbs.twimg.com/profile_images/1321163587679784960/0ZxKlEKB_400x400.jpg",
-    "https://pbs.twimg.com/profile_images/1609416420076535808/4BwbURyI_400x400.jpg",
-    "https://pbs.twimg.com/profile_images/1590968738358079488/IY9Gx6Ok_400x400.jpg",
-    "https://pbs.twimg.com/profile_images/1579916871654117376/Dxd2l1sN_400x400.png",
-  ];
-
-  function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
-
   const modalVisibility = () => {
     setModal(true);
     setProduct(messageData);

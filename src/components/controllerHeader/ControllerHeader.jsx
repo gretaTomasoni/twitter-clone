@@ -1,11 +1,12 @@
 import { useState } from "react";
 import "./index.css";
 
-const ControllerHeader = () => {
+const ControllerHeader = ({ setbuttonPage }) => {
   const [isActive, setIsActive] = useState(false);
 
   const isActiveFunc = () => {
     setIsActive((prev) => !prev);
+    setbuttonPage(isActive);
     console.log(isActive);
   };
 
